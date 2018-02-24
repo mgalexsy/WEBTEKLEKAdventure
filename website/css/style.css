@@ -16,9 +16,7 @@ body {
   font-family: Georgia;
 }
 
-h1 {
-   font-size: 250%
-}
+
 
 p {
   font-size: 140%;
@@ -49,9 +47,9 @@ img {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }**/
 
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
+/**img:last-of-type {
+  transform: scale(.8) translateX(-104%) translateY(-40%) ;
+}**/
 
 .slide:before {
   content: "";
@@ -128,23 +126,104 @@ img:last-of-type {
 
 /**FOOTER**/
 
-* {
-    box-sizing: border-box;
-}
-
-
-
-/* Create three equal columns that floats next to each other */
-.column {
+.gallery {
+    margin: 5px;
     float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    width: 180px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+#avatar {
+    width: 120px;
+    height: auto;
+     display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+
+}
+
+
+#avatar:hover, #avatar:focus, #avatar:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+h3 {
+    
+    text-align: center;
+    font-family: Courier New;
+    font-size: 25px;
+    display: inline-block;
+   vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+h3:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  left: calc(50% - 10px);
+  top: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #e1e1e1 transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+h3:hover, h3:focus, h3:active {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+h3:hover:before, h3:focus:before, h3:active:before {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+
+h2 {
+
+font-family: Times New roman;
+
+}
+
+.copyright {
+
+  text-align:center;
+  font-size: 12px;
+  color: white;
+}
+
+a {
+
+font-family: Georgia;
+font-size: 300%;
+color: black;
+font-style: bold;
+
+
 }
