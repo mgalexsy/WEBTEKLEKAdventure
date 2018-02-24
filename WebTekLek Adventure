@@ -275,3 +275,65 @@ HTTP Status Codes
 503 Service Unavailable
 504 Gateway Time-out
 505 HTTP Version Not Supported
+
+
+Acronyms
+•	A
+ARPANET: Advance Research Projects Agency Network
+
+
+•	C
+CRLF: carriage return, line feed
+
+
+•	D
+DARPA: Defense Advanced Research Project Agency
+DNS: Domain Name Service / Server / System
+
+
+•	H
+HTML: HyperText Markup Language
+HTTP: HyperText Transport Protocol
+HTTPS: HyperText Transport Protocol Secure
+
+
+•	I
+IETF: Internet Engineering Task Force
+IMG: Image
+IP: Internet Protocol
+
+
+•	J
+JPG: Joint Photographic Experts Group
+
+
+•	R
+RFC: Request for Comments
+
+
+•	S
+SSL: Secure Sockets Layer
+
+
+•	T
+TCP: Transmission control protocol
+TLS: Transport Layer Security
+
+
+•	U
+UA: User Agents
+URI: Uniform Resource Identifier
+URL: Uniform Resource Locator
+URN: Uniform Resource Name
+
+
+•	W
+WAIS: Wide Area Information Servers
+WWW: World Wide Web
+W3C: World Wide Web Consortium
+
+
+•	X
+XLS: eXceL Spreadsheet
+
+/*Reference: http://www.consp.com/it-information-technology-terminology-dictionary*/
