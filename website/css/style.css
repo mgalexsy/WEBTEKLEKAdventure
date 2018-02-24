@@ -1,0 +1,179 @@
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #white;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: '\f1cb';
+}
+
+label[for*='2']:before {
+  content: '\f17d';
+}
+
+label[for*='3']:before {
+  content: '\f16b';
+}
+
+label[for*='4']:before {
+  content: '\f1a9';
+}
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+
+
+
+/*...footer...*/
+
+
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  background-color: #black;
+  padding: 50px 0;
+
+}
+
+.footer .container h1 {
+  font-size: 24px;
+  font-style: bold;
+  padding-bottom: 20px;
+}
+
+
+.copyright{
+  width: 100%;
+  background-color: #black;
+  float: left;
+  padding: 20px 0;
+}
+
+.copyright p {
+  float: left;
+  padding-left: 20px;
+}
+
+.list-social {
+  float: right;
+  padding-right: 20px;
+}
+
+.list-social li {
+  float: left;
+  margin-right: 40px;
+}
+
+.list-social .social1 { padding-top: 3px; }
+
+.list-social .social2 { padding-top: 2px; }
+
+/*...logo...*/
+
+#logo1{
+
+    float: left;
+    z-index: 1;
+    position: relative;
+}
+#logo2{
+    margin-right: : 8%;
+    float:right;
+    z-index: 1;
+    position: relative;
+}
+
