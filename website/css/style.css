@@ -1,179 +1,150 @@
 
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+html {
+  height: 100%;
+  overflow: hidden;
 }
 
-html, body {
-  height: 100vh;
-}
-
-body {
-  font: 14px/1 'Open Sans', sans-serif;
-  color: #555;
-  background: #white;
+body { 
+  margin:0;
+  padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Georgia;
 }
 
 h1 {
-  padding: 50px 0;
-  font-weight: 400;
-  text-align: center;
+   font-size: 250%
 }
 
 p {
-  margin: 0 0 20px;
-  line-height: 1.5;
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
 }
 
-main {
-  min-width: 320px;
-  max-width: 800px;
-  padding: 50px;
-  margin: 0 auto;
-  background: #fff;
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+    transform-style: inherit;
+}
+/**
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}**/
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
 
-section {
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #ddd;
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
 }
 
-input {
-  display: none;
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
   text-align: center;
-  color: #bbb;
-  border: 1px solid transparent;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
 }
 
-label:before {
-  font-family: fontawesome;
-  font-weight: normal;
-  margin-right: 10px;
+#title {
+  background-image: url("../images/1.jpg");
+  z-index:2;
 }
 
-label[for*='1']:before {
-  content: '\f1cb';
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
 }
 
-label[for*='2']:before {
-  content: '\f17d';
+#slide1:before {
+  background-image: url("../images/2.jpg");
+  transform: translateZ(-1px) scale(2);
 }
 
-label[for*='3']:before {
-  content: '\f16b';
+#slide2 {
+  background-image: url("../images/soon.jpg");
+  z-index:2;
 }
 
-label[for*='4']:before {
-  content: '\f1a9';
+#slide3:before {
+  background-image: url("../images/soon.jpg");
+  transform: translateZ(-1px) scale(2);
 }
 
-label:hover {
-  color: #888;
-  cursor: pointer;
-}
-
-input:checked + label {
-  color: #555;
-  border: 1px solid #ddd;
-  border-top: 2px solid orange;
-  border-bottom: 1px solid #fff;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
-  display: block;
-}
-
-@media screen and (max-width: 650px) {
-  label {
-    font-size: 0;
-  }
-
-  label:before {
-    margin: 0;
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 400px) {
-  label {
-    padding: 15px;
-  }
+#slide4 {
+  background: #222;
 }
 
 
 
-/*...footer...*/
 
 
+/**FOOTER**/
 
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  text-align: center;
-}
-.footer {
-  width: 100%;
-  background-color: #black;
-  padding: 50px 0;
-
-}
-
-.footer .container h1 {
-  font-size: 24px;
-  font-style: bold;
-  padding-bottom: 20px;
+* {
+    box-sizing: border-box;
 }
 
 
-.copyright{
-  width: 100%;
-  background-color: #black;
-  float: left;
-  padding: 20px 0;
-}
 
-.copyright p {
-  float: left;
-  padding-left: 20px;
-}
-
-.list-social {
-  float: right;
-  padding-right: 20px;
-}
-
-.list-social li {
-  float: left;
-  margin-right: 40px;
-}
-
-.list-social .social1 { padding-top: 3px; }
-
-.list-social .social2 { padding-top: 2px; }
-
-/*...logo...*/
-
-#logo1{
-
+/* Create three equal columns that floats next to each other */
+.column {
     float: left;
-    z-index: 1;
-    position: relative;
-}
-#logo2{
-    margin-right: : 8%;
-    float:right;
-    z-index: 1;
-    position: relative;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
 }
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
