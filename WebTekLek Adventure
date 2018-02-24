@@ -280,15 +280,33 @@ HTTP Status Codes
 Acronyms
 •	A
 ARPANET: Advance Research Projects Agency Network
+ATAG: Authoring Tool Accessibility Guidelines
+
+
+•	B
+BBS: Bulletin Board System
 
 
 •	C
-CRLF: carriage return, line feed
+CERN: Conseil Europeen pour la Recherche Nucleaire
+CRLF: Carriage Return, Line Feed
 
 
 •	D
+D: Depricated
 DARPA: Defense Advanced Research Project Agency
 DNS: Domain Name Service / Server / System
+DOM: Document Object Model
+
+
+•	E
+E: Empty
+
+
+•	F
+F: Frameset
+F: Forbidden
+FTP: File Transfer Protocol
 
 
 •	H
@@ -298,6 +316,7 @@ HTTPS: HyperText Transport Protocol Secure
 
 
 •	I
+ICANN: Internet Corporation For Assigned Names and Numbers
 IETF: Internet Engineering Task Force
 IMG: Image
 IP: Internet Protocol
@@ -307,11 +326,25 @@ IP: Internet Protocol
 JPG: Joint Photographic Experts Group
 
 
+•	L
+ L: Loose
+ 
+ 
+•	M
+MIME: Multipurpose Internet Mail Extensions
+MITM: Man In The Middle
+
+
+•	O
+O: Optional
+
+
 •	R
 RFC: Request for Comments
 
 
 •	S
+SGML: Standard Generalized Markup Language
 SSL: Secure Sockets Layer
 
 
@@ -322,18 +355,25 @@ TLS: Transport Layer Security
 
 •	U
 UA: User Agents
+UAAG: User Agent Accessibility Guidelines
 URI: Uniform Resource Identifier
 URL: Uniform Resource Locator
 URN: Uniform Resource Name
 
 
 •	W
+WAI: Web Accessibility Initiative
 WAIS: Wide Area Information Servers
+WCAG: Web Content Accessibility Guidelines
+WHATWG: Web Hypertext Application Technology Working Group
 WWW: World Wide Web
 W3C: World Wide Web Consortium
 
 
 •	X
-XLS: eXceL Spreadsheet
+XHTML: Extensible Hypertext Markup Language
+XLS: ExceL Spreadsheet
+XML: Extensible Markup Language
+
 
 /*Reference: http://www.consp.com/it-information-technology-terminology-dictionary*/
