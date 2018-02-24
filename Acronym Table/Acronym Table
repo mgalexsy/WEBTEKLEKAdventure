@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <caption>Acronym Table</caption>
+  <tr>
+    <th>Acronym</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>ARPANET</td>
+    <td>Advance Research Projects Agency Network</td>
+  </tr>
+  <tr>
+    <td>BBS</td>
+    <td>Bulletin Board System</td>
+  </tr>
+  <tr>
+    <td>CERN</td>
+    <td>Conseil Europeen pour la Recherche Nucleaire</td>
+  </tr>
+  <tr>
+    <td>CRLF</td>
+    <td>Carriage Return, Line Feed</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>Depricated</td>
+  </tr>
+  <tr>
+    <td>DARPA</td>
+    <td>Defense Advanced Research Project Agency</td>
+  </tr>
+  <tr>
+    <td>DNS</td>
+    <td>Domain Name Service / Server / System</td>
+  </tr>
+  <tr>
+    <td>DOM</td>
+    <td>Document Object Model</td>
+  </tr>
+  <tr>
+    <td>E</td>
+    <td>Empty</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>Frameset</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>Forbidden</td>
+  </tr>
+  <tr>
+    <td>FTP</td>
+    <td>File Transfer Protocol</td>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>HyperText Markup Language</td>
+  </tr>
+  <tr>
+    <td>HTTP</td>
+    <td>HyperText Transport Protocol</td>
+  </tr>
+  <tr>
+    <td>HTTPS</td>
+    <td>HyperText Transport Protocol Secure</td>
+  </tr>
+  <tr>
+    <td>ICANN</td>
+    <td>Internet Corporation For Assigned Names and Numbers</td>
+  </tr>
+  <tr>
+    <td>IETF</td>
+    <td>Internet Engineering Task Force</td>
+  </tr>
+  <tr>
+    <td>IMG</td>
+    <td>Image</td>
+  </tr>
+  <tr>
+    <td>IP</td>
+    <td>Internet Protocol</td>
+  </tr>
+  <tr>
+    <td>JPG</td>
+    <td>Joint Photographic Experts Group</td>
+  </tr>
+  <tr>
+    <td>L</td>
+    <td>Loose</td>
+  </tr>
+  <tr>
+    <td>MIME</td>
+    <td>Multipurpose Internet Mail Extensions</td>
+  </tr>
+  <tr>
+    <td>MITM</td>
+    <td>Man In The Middle
+</td>
+  </tr>
+  <tr>
+    <td>O</td>
+    <td>Optional</td>
+  </tr>
+  <tr>
+    <td>RFC</td>
+    <td>Request for Comments</td>
+  </tr>
+  <tr>
+    <td>SGML</td>
+    <td>Standard Generalized Markup Language</td>
+  </tr>
+  <tr>
+    <td>SSL</td>
+    <td>Secure Sockets Layer</td>
+  </tr>
+  <tr>
+    <td>TCP</td>
+    <td>Transmission control protocol</td>
+  </tr>
+  <tr>
+    <td>TLS</td>
+    <td>Transport Layer Security</td>
+  </tr>
+  
+  
+</table>
+
+</body>
+</html>
