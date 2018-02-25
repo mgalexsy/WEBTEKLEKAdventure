@@ -137,6 +137,62 @@ th, td {
     <td>TLS</td>
     <td>Transport Layer Security</td>
   </tr>
+  <tr>
+    <td>UA</td>
+    <td>User Agents</td>
+  </tr>
+  <tr>
+    <td>UAAG</td>
+    <td>User Agent Accessibility Guidelines</td>
+  </tr>
+  <tr>
+    <td>URI</td>
+    <td>Uniform Resource Identifier</td>
+  </tr>
+  <tr>
+    <td>URL</td>
+    <td>Uniform Resource Locator</td>
+  </tr>
+  <tr>
+    <td>URN</td>
+    <td>Uniform Resource Name</td>
+  </tr>
+  <tr>
+    <td>WAI</td>
+    <td>Web Accessibility Initiative</td>
+  </tr>
+  <tr>
+    <td>WAIS</td>
+    <td>Wide Area Information Servers</td>
+  </tr>
+  <tr>
+    <td>WCAG</td>
+    <td>Web Content Accessibility Guidelines</td>
+  </tr>
+  <tr>
+    <td>WHATWG</td>
+    <td>Web Hypertext Application Technology Working Group</td>
+  </tr>
+  <tr>
+    <td>WWW</td>
+    <td>World Wide Web</td>
+  </tr>
+  <tr>
+    <td>W3C</td>
+    <td>World Wide Web Consortium</td>
+  </tr>
+  <tr>
+    <td>XHTML</td>
+    <td>Extensible Hypertext Markup Language</td>
+  </tr>
+  <tr>
+    <td>XLS</td>
+    <td>ExceL Spreadsheet</td>
+  </tr>
+  <tr>
+    <td>XML</td>
+    <td>Extensible Markup Language</td>
+  </tr>
   
   
 </table>
