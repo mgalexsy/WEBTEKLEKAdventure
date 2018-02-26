@@ -1,0 +1,112 @@
+<style>
+#sc1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc1 td, #sc1 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc1 tr:nth-child(even){background-color: #cfd8dc;}
+
+#sc1 tr:hover {background-color: #7cb342;}
+
+#sc1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #424242;
+    color: white;
+}
+#sc2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc2 td, #sc2 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc2 tr:nth-child(even){background-color: #cfd8dc;}
+
+#sc2 tr:hover {background-color: #7cb342;}
+
+#sc2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#424242;
+    color: white;
+}
+#sc3 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc3 td, #sc3 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc3 tr:nth-child(even){background-color:  #cfd8dc;}
+
+#sc3 tr:hover {background-color: #7cb342;}
+
+#sc3 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#424242;
+    color: white;
+}
+#sc4 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc4 td, #sc4 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc4 tr:nth-child(even){background-color:  #cfd8dc;}
+
+#sc4 tr:hover {background-color: #7cb342;}
+
+#sc4 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #424242;
+    color: white;
+}
+#sc5 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc5 td, #sc4 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc5 tr:nth-child(even){background-color:  #cfd8dc;}
+
+#sc5 tr:hover {background-color: #7cb342;}
+
+#sc5 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #424242;
+    color: white;
+}
+</style>

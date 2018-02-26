@@ -1,0 +1,353 @@
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#sc1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc1 td, #sc1 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc1 tr:nth-child(even){background-color: #cfd8dc;}
+
+#sc1 tr:hover {background-color: #7cb342;}
+
+#sc1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #424242;
+    color: white;
+}
+#sc2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc2 td, #sc2 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc2 tr:nth-child(even){background-color: #cfd8dc;}
+
+#sc2 tr:hover {background-color: #7cb342;}
+
+#sc2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#424242;
+    color: white;
+}
+#sc3 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc3 td, #sc3 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc3 tr:nth-child(even){background-color:  #cfd8dc;}
+
+#sc3 tr:hover {background-color: #7cb342;}
+
+#sc3 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#424242;
+    color: white;
+}
+#sc4 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc4 td, #sc4 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc4 tr:nth-child(even){background-color:  #cfd8dc;}
+
+#sc4 tr:hover {background-color: #7cb342;}
+
+#sc4 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #424242;
+    color: white;
+}
+#sc5 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc5 td, #sc4 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc5 tr:nth-child(even){background-color:  #cfd8dc;}
+
+#sc5 tr:hover {background-color: #7cb342;}
+
+#sc5 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #424242;
+    color: white;
+}
+</style>
+</head>
+<body>
+ <h1>Status Codes</h1>
+<h2>Information Responses</h2>
+<table id="sc1">
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Continue</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Switching Protocols</td>
+     </tr>
+  <tr>
+    <td>102</td>
+    <td>Processing</td>
+     </tr>
+    <tr>
+    <td>103</td>
+    <td>Early Hints</td>
+     </tr>
+   </table>
+  <h2>Success</h2>
+<table id="sc2">
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>Ok</td>
+  </tr>
+  <tr>
+    <td>201</td>
+    <td>Created</td>
+     </tr>
+  <tr>
+    <td>202</td>
+    <td>Accepted</td>
+  </tr>
+  <tr>
+    <td>203</td>
+    <td>Non-Authoritative Information (Since HTTP/1.1)</td>
+ </tr>
+  <tr>
+    <td>204</td>
+    <td>No Content</td>
+  </tr>
+  <tr>
+    <td>205</td>
+    <td>Reset Content</td>
+  </tr>
+  <tr>
+    <td>206</td>
+    <td>Patial Content(RFC 7233)</td>
+  </tr>
+  <tr>
+    <td>207</td>
+    <td>Multi-Status(WebDAV;RFC 4918)</td>
+  </tr>
+  <tr>
+    <td>208</td>
+    <td>Already Reported(WebDAV; RFC 5842)</td>
+  </tr>
+  <tr>
+    <td>226</td>
+    <td>IM Used(RFC 3229)</td>
+  </tr>
+</table>
+<h2>Redirection</h2>
+<table id="sc3">
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>300</td>
+    <td>Multiple Choices</td>
+  </tr>
+  <tr>
+    <td>301</td>
+    <td>Moved Permanently</td>
+  </tr>
+  <tr>
+    <td>302</td>
+    <td>Found</td>
+  </tr>
+  <tr>
+    <td>303</td>
+    <td>See Other (Since HTTP/1.1)</td>
+  </tr>
+  <tr>
+    <td>304</td>
+    <td>Not Modified (RFC 7232)</td>
+ </tr>
+ <tr>
+    <td>305</td>
+    <td>Used Proxy(Since HTTP/1.1)</td>
+ </tr>
+  <tr>
+    <td>306</td>
+    <td>Switch Proxy </td>
+  </tr>
+  <tr>
+    <td>307</td>
+    <td>Temporary Redirect (Since HTTP/1.1)</td>
+  </tr>
+  <tr>
+    <td>308</td>
+    <td>Permanent Redirect (RFC 7538)</td>
+  </tr>
+  </table>
+  <h2>Client Errors</h2>
+<table id="sc4">
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>Bad Request</td>
+ </tr>
+  <tr>
+    <td>401</td>
+    <td>Unauthorized</td>
+  </tr>
+  <tr>
+    <td>402</td>
+    <td>Payment Required</td>
+  </tr>
+  <tr>
+    <td>403</td>
+    <td>Forbidden</td>
+ </tr>
+  <tr>
+    <td>404</td>
+    <td>Not Found</td>
+  </tr>
+  <tr>
+    <td>405</td>
+    <td>Method Not Allowed</td>
+  </tr>
+  <tr>
+    <td>406</td>
+    <td>Not Acceptable</td>
+  </tr>
+  <tr>
+    <td>407</td>
+    <td>Proxy Authentication Required</td>
+  </tr>
+  <tr>
+    <td>408</td>
+    <td>Request Timeout</td>
+  </tr>
+  <tr>
+    <td>409</td>
+    <td>Conflict</td>
+  </tr>
+  <tr>
+    <td>410</td>
+    <td>Gone</td>
+  </tr>
+  <tr>
+    <td>411</td>
+    <td>Length Required</td>
+  </tr>
+  <tr>
+    <td>412</td>
+    <td>Precondtion Failed(RFC 7232)</td>
+  </tr>
+  <tr>
+    <td>413</td>
+    <td>Payload Too large(RFC 7231)</td>
+  </tr>
+   <tr>
+    <td>414</td>
+    <td>URI Too Long(RFC 7231)</td>
+   </tr>
+  <tr>
+    <td>415</td>
+    <td>Unsupported Media Type</td>
+  </tr>
+  <tr>
+    <td>416</td>
+    <td>Range Not Satisfiable(RFC 7233)</td>
+  </tr>
+  <tr>
+    <td>417</td>
+    <td>Expectation Failed</td>
+  </tr>
+  <tr>
+    <td>418</td>
+    <td>I'm a teapot(RFC 2324)</td>
+  </tr>
+  <tr>
+    <td>421</td>
+    <td>Missdirected Request (RFC 7540)</td>
+  </tr>
+  <tr>
+    <td>422</td>
+    <td>Unprocessable Entity(WebDAV; RFC 4918)</td>
+  </tr>
+  <tr>
+    <td>423</td>
+    <td>Locked(WebDAV; RFC 4918)</td>
+  </tr>
+  <tr>
+    <td>424</td>
+    <td>Failed Dependency(WebDAV;RFC 4918)</td>
+  </tr>
+  <tr>
+    <td>426</td>
+    <td>Upgrade Required</td>
+  </tr>
+  <tr>
+    <td>428</td>
+    <td>Precondition Required(RFC 6585)</td>
+  </tr>
+  <tr>
+    <td>429</td>
+    <td>Too Many Request(RFC 6585)</td>
+  </tr>
+  <tr>
+    <td>431</td>
+    <td>Request Header Fields Too Large(RFC 6585)</td>
+  </tr>
+  <tr>
+    <td>451</td>
+    <td>Unavailable For Legal Reasons(RFC 7725)</td>
+  </tr>            
+  </table>
+  </body>
+</html>

@@ -65,6 +65,8 @@ o	IP address + port number = socket
 •	authentication/authorization
 •	and others
 
+HTTP MESSAGE
+
 HTTP Resource Addressing
 * HTTP Resources are identified using URIs (RFC 3986) or more specifically, HTTP URLs
 	URN – naming without regard to where it is (Ex.  ISBN)
