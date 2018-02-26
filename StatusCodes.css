@@ -87,4 +87,26 @@
     background-color: #424242;
     color: white;
 }
+#sc5 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+#sc5 td, #sc4 th {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#sc5 tr:nth-child(even){background-color:  #cfd8dc;}
+
+#sc5 tr:hover {background-color: #7cb342;}
+
+#sc5 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #424242;
+    color: white;
+}
 </style>
