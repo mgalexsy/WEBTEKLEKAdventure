@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Prelims</title>
+    <link rel="stylesheet" type="text/css" href="css/prelims.css">
+</head>
+<body>
+
+<section class="moduleone">
+    <div class="container">
+     <h1>  HTTP </h1>
+    </div>
+</section><!--first section -->
+<section class="module content">
+    <div class="container">
+   <ol>
+       <li>Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web (WWW)</li>
+       <li>The foundation of data communication for the WWW</li>
+
+       <li>An application for distributed, collaborative, hypermedia information systems</li>
+
+       <li>Invented by Tim Berners-Lee</li>
+       <li> Jointly developed by the W3C and the IETF </li>
+       <li>Version history</li>
+          <ul>
+              <li>HTTP 0.9 (1991) - GET</li>
+              <li>HTTP 1.0 (RFC 1945, May 1996)</li>
+              <li>HTTP 1.1 (RFC 2068 January 1997), (RFC 2616 June 1999), (RFC 7230-7235 June 2014)</li>
+              <li>HTTP 2 (RFC 7540 May 2015)</li>
+              <li>SPDY – Protocol designed by Google</li>
+          </ul>
+   </ol>
+        
+    </div>
+</section>
+
+<section class="moduletwo">
+    <div class="container">
+        <h1> Internet (security) </h1>
+    </div>
+</section>
+
+<section class="module content">
+    <div class="container">
+   <ol>
+	<li>Logically linked together by a global unigue address space based on the IP</li>
+	<li>Intra : within the boundaries</li>
+	<li>Network : interconnection of devices</li>
+	<li>Nodes : devices that are connected (EX desktop, laptop)</li>
+	<li>Interconnections</li>
+		<ul>
+			<li>wired : physical connection</li>
+			<li>wireless : radio waves</li>
+		</ul>
+	<li>Protocols : communication standard (representing data)</li>
+		<ul>
+			<li>IP Address </li>
+			<li>IPv4 32 bit</li>
+			<li>IPv6 64 bit</li>
+		</ul>
+	<li>Able to support communications using the transmission control protocol / internet protocol (TCP/IP)</li>
+	<li>Provides, uses, or makes accessible, either publicly or privately, high level services layered on the communications</li>
+          <ul>
+              <li>1969 : Birth of Internet, ARPANET connection, DARPA</li>
+              <li>Circuit switch : packets, establish actual connection</li>
+              <li>1972 : Email was introduced, first cyber killer made use of the internet</li>
+              <li>1989 : WWW was introduced by SIr Tim Berners-Lee</li>
+              <li>HTTP, HTML, URL, webservers, web client</li>
+              <li>WAIS : indexes, queries information</li>
+              <li>Gopher (protocol) : hierachy of information</li>
+              <li>Usenet : Forum, newsfeed</li>
+              <li>Webserver : hosts website</li>
+          </ul>
+   </ol>
+    </div>
+</section> 
+
+<!--MODULE THREE-->
+<section class="modulethree">
+    <div class="container">
+       <h1>HTTP Fundamentals</h1>
+    </div>
+</section>
+<!--CONTENT-->
+<section class="module content">
+    <div class="container">
+    	<ol>	
+    		<li>HTTP runs on top of TCP/IP, using TCP port 80 by default, or TCP port 443 for HTTPS (HTTP over SSL/TLS)</li>
+    		<li>HTTP is based on a client-server, architecture</li>
+    			<ul>
+    				<li>clients, aka user agents (UA):</li>
+    			</ul>
+    		<li>Web browsers, web crawlers/spiders, other end user tools and applications</li>
+    			<ul>
+    				<li>NOTE: port number – unique number assigned by operating system (0-64K)</li>
+    				<li>IP address + port number = socket</li>
+    				<li> servers:</li>
+    				<li> Origin servers</li>
+    				<li> Proxy servers, gateways, tunnels</li>
+    			</ul>
+			<li>HTTP uses a request-response standard protocol</li>
+				<ul>
+					<li>the client sends an HTTP request message to the server</li>
+					<li>the server processes the request and replies with an HTTP response message</li>
+				</ul>
+			<li>HTTP is a stateless communications protocol</li>
+				<ul>
+					<li>servers do not keep information about clients in-between requests</li>
+				</ul>
+			<li>HTTP provides support for other functionalities, such as:</li>
+				<ul>
+					<li>cache control</li>
+    				<li>content media type (MIME-Multipurpose Internet Mail Extensions) specification</li>
+    				<li>e.g. text/html (.xls), img/jpg (.jpg)</li>
+    				<li>language and character set specification</li>
+    				<li>content/transfer coding</li>
+    				<li>content negotiation</li>
+    				<li>client-server protocol negotiations</li>
+    				<li>Locality of Reference Protocol</li>
+    				<li>persistent connections</li>
+    				<li>request pipelining</li>
+    				<li>authentication/authorization</li>
+					<li>and others</li>    		
+				</ul>
+    	</ol>
+ </div>
+</section>
+
+<!--MODULE four-->
+<section class="modulefour">
+    <div class="container">
+       <h1>HTTP Resource Addressing</h1>
+    </div>
+</section>
+<!--CONTENT-->
+<section class="module content">
+    <div class="container">
+    	<ol>
+        	<li>HTTP Resources are identified using URIs (RFC 3986) or more specifically, HTTP URLs</li>
+        		<ul>
+        			<li>URN – naming without regard to where it is (Ex.  ISBN)</li>
+        			<li>URL – how to access (mechanism of finding)</li>
+        			<li>scheme (http or https) - protocol</li>
+        			<li>authority</li>
+        			<li>user info or authentication credentials (deprecated) </li>
+        			<li>host (host name – where the resources)</li>
+        			<li>port number (default- 80)</li>        			
+					<li>user information or authentication credentials (deprecated)</li>
+					<li>host</li>
+					<li>domain name (resolved to an IP address using DNS) of the server where the resource resides (or will be created)</li>
+					<li>path to resource (resolved relative to the document root on the server)</li>
+					<li>may refer to a static or dynamic resource (static – html itself; dynamic – scripts)</li>
+					<li>query (starts with ? ) Ex. Products.php?</li>
+					<li>typically provided as key=value pairs, with ampersand (&) separators between key/value pairs</li>
+					<li>May be URL encoded</li>
+					<li>Fragment Identifier</li>
+					<li># - identify id</li>
+					<li>+ - space</li>
+					<li>& - separation keys</li>
+        		</ul>
+		</ol>
+    </div>
+</section>
+
+<!--MODULE FIVE-->
+<section class="modulefive">
+    <div class="container">
+       <h1>HTTP Request Message</h1>
+    </div>
+</section>
+
+<!--CONTENT-->
+<section class="module content">
+    <div class="container">
+		<ol>
+			<li>Request Line (CRLF terminated line connecting three spaces separated values)</li>
+				<ul>
+					<li>Method</li>
+					<li>Request URI</li>
+					<li>HTTP Protocol Versions</li>
+					<li>Message Headers (general, request, and/or entity leaders)</li>
+					<li>HTTP 1.1 requires at least the Host request header to be provided (1 header required)(Ex. Fieldname: value)</li>
+					<li>1.  General headers fields – can be used by clients and server.</li>
+					<li>2.	Request header fields – used by clients.</li>
+					<li>3.	Response header fields – server</li>
+					<li>4.	Entity header fields</li>
+					<li>Empty Line (CRLF)</li>
+					<li>Message Body AKA payload (optional)(message body – entity)</li>
+				</ul>
+			</li>
+		</ol>	
+    </div>
+</section>
+
+<!--MODULE SIX-->
+<section class="modulesix">
+    <div class="container">
+       <h1>HTTP Response Message</h1>
+    </div>
+</section>
+
+<!--CONTENT-->
+<section class="module content">
+    <div class="container">
+    	<ol>
+    		<li>Status Line (CRLF-terminated line consisting of three space-separated values)</li>
+    			<ul>
+    				<li>HTTP Protocol Version</li>
+    				<li>Status Code (3 digit)</li>
+    				<li>-	Information (1xx)</li>
+    				<li>-	Success (2xx)</li>
+    				<li>-	Redirection (3xx)</li>
+    				<li>-	Client error (4xx)</li>
+    				<li>-	Server error (5xx)</li>
+    				<li>Reason Phrase (Ex. Success 2xx – 200 OK)</li>
+    				<li>Message Headers (general, response, and/or entity headers)</li>
+    				<li>Empty Line (CRLF)</li>
+    				<li>Message Body (optional) – have body more than request message.</li>
+    			</ul>
+    	</ol>
+    </div>
+</section>
+
+<!--MODULE SEVEN-->
+<section class="moduleseven">
+    <div class="container">
+       <h1>HTTP Request Methods</h1>
+    </div>
+</section>
+
+<!--CONTENT-->
+<section class="module content">
+    <div class="container">
+    	<ol>
+    		<li>Standard Methods (HTTP verbs)</li>
+    		<li>GET</li>
+    			<UL>
+    				<li>Transfer a current selected representation of the resource identified by the Request URI; the retrieved resource is returned in the message of the response as an entity</li>
+    				<li>Most commonly used HTTP method</li>
+    				<li>Must be supported by all compliant general-purpose servers</li>
+    			</UL>
+    		<li>HEAD</li>
+    			<UL>
+    				<li>Same as GET, except that the entity is not included in the response (ie. Returns only the status line and headers returned by a GET request, without the message body)</li>
+    				<li>Used to retrieve metadata about the entity implied by the request without transferring the entity itself (eg. To test for link validity or resource modification)</li>
+    				<li>Like GET, must be supported by all general-purpose servers</li>
+    			</UL>
+    		<li>POST</li>
+    			<UL>
+    				<li>Perform resource-specific processing of the entities enclosed in the message body by the resource identified by the Request </li>
+    				<li>URI</li>
+    				<li>Typically used in submitting HTML form data</li>
+    			</UL>
+    		<li>PUT</li>
+    			<UL>
+    				<li>Store the enclosed entity in the message body under the specified Request URI (ie the resource identified by the Request URI is either created or replaced, using the enclosed entity)</li>
+    				<li>Extension Method</li>
+    				<li>Eg : Web DAV (RFC 4918)</li>
+    				<li>PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
+    			</UL>
+    		<li>OPTIONS</li>
+    			<UL>
+    				<li>Request information about the communication option available for the resource</li>
+    			</UL>
+    		<li>DELETE</li>
+    			<UL>
+    				<li>Remove the resource associated with request URI</li>
+    			</UL>
+    		<li>TRACE</li>
+    			<UL>
+    				<li>Request a loop-back of the request message (ie request the server to echo back to the client the received request message)</li>
+    				<li>Typically used for teaching/diagnostics of the request/response shown</li>
+    			</UL>
+    		<li>CONNECT</li>
+    			<UL>
+    				<li>Request the establishment of a tunnel to the destination origin server, and if successful, thereafter restrict its behaviour to blind-forwarding of packet, in both directions, until the tunnel is closed</li>
+    				<li>Commonly used to create an end-to-end virtual connection</li>
+    				<li>Safe Methods, Idempotent Methods, Cacheable </li>
+    			</UL>    			    			    			    			
+		</ol>	
+    </div>
+</section>
+
+<!--MODULE EIGHT-->
+<section class="moduleeight">
+    <div class="container">
+       <h1>HTTP Message Headers</h1>
+    </div>
+</section>
+
+<!--CONTENT-->
+<section class="module content">
+    <div class="container">
+    	<ol>
+    		<li>General Header Fields</li>
+    			<ul>
+    				<li>Cache-Control</li>
+    				<li>Connection</li>
+    				<li>Date</li>
+    				<li>Pragma</li>
+    				<li>Trailer</li>
+    				<li>Transfer-Encoding</li>
+    				<li>Upgrade</li>
+    				<li>Via</li>
+    				<li>Warning</li>
+    			</ul>
+    		<li>Request Header Fields</li>
+    			<ul>
+    				<li>Accept</li>
+    				<li>Accept-Charset</li>
+    				<li>Accept-Encoding</li>
+    				<li>Accept-Language</li>
+    				<li>Authorization</li>
+    				<li>Expect</li>
+    				<li>From</li>
+    				<li>Host</li>
+    				<li>If-Match *</li>
+    				<li>If-Modified-Since *</li>
+    				<li>If-None-Match *</li>
+    				<li>If-Range *</li>
+    				<li>If-Unmodified-Since</li>
+    				<li>Max-Forwards</li>
+    				<li>Proxy-Authorization</li>
+    				<li>Range</li>
+    				<li>Referrer</li>
+    				<li>TE</li>
+    				<li>User-Agent</li>
+    			</ul>
+    		<li>Conditional Headers</li>
+    			<ul>
+    				<li>Response Header Fields</li>
+    				<li>Accept-Ranges</li>
+    				<li>Age</li>
+    				<li>ETag (Entity Tag)</li>
+    				<li>Location</li>
+    				<li>Proxy-Authenticate</li>
+    				<li>Retry-After</li>
+    				<li>Server</li>
+    				<li>Vary</li>
+    				<li>WWW-Authenticate</li>
+    			</ul>
+    		<li>Entity Header Fields</li>
+    			<ul>
+    				<li>Allow</li>
+    				<li>Content-Encoding</li>
+    				<li>Content-Language</li>
+    				<li>Content-Length</li>
+    				<li>Content-Location</li>
+    				<li>Content-MD5 (Message Digest)</li>
+    				<li>Content-Range</li>
+    				<li>Content-Type</li>
+    				<li>Expires</li>
+    				<li>Last-Modified</li>
+    			</ul>
+    	</ol>
+    </div>
+</section>
+
+<!--MODULE NINE-->
+<section class="modulenine">
+    <div class="container">
+       <h1>Acronym Table</h1>
+    </div>
+</section>
+
+<!--CONTENT-->
+<section class="module content">
+    <div class="container">
+        <h2>HTTP 9</h2>
+    </div>
+</section>
+
+<!--MODULE TEN-->
+<section class="moduleten">
+    <div class="container">
+       <h1>Status Code Table</h1>
+    </div>
+</section>
+
+<!--CONTENT-->
+<section class="module content">
+    <div class="container">
+        <h2>HTTP 10</h2>
+    </div>
+</section>
+
+
+
+
+<table >
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Continue</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Switching Protocols</td>
+     </tr>
+  <tr>
+    <td>102</td>
+    <td>Processing</td>
+     </tr>
+    <tr>
+    <td>103</td>
+    <td>Early Hints</td>
+     </tr>
+   </table>
+  <h2>Success</h2>
+<table id="sc2">
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>Ok</td>
+  </tr>
+  <tr>
+    <td>201</td>
+    <td>Created</td>
+     </tr>
+  <tr>
+    <td>202</td>
+    <td>Accepted</td>
+  </tr>
+  <tr>
+    <td>203</td>
+    <td>Non-Authoritative Information (Since HTTP/1.1)</td>
+ </tr>
+  <tr>
+    <td>204</td>
+    <td>No Content</td>
+  </tr>
+  <tr>
+    <td>205</td>
+    <td>Reset Content</td>
+  </tr>
+  <tr>
+    <td>206</td>
+    <td>Patial Content(RFC 7233)</td>
+  </tr>
+  <tr>
+    <td>207</td>
+    <td>Multi-Status(WebDAV;RFC 4918)</td>
+  </tr>
+  <tr>
+    <td>208</td>
+    <td>Already Reported(WebDAV; RFC 5842)</td>
+  </tr>
+  <tr>
+    <td>226</td>
+    <td>IM Used(RFC 3229)</td>
+  </tr>
+</table>
+<h2>Redirection</h2>
+<table id="sc3">
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>300</td>
+    <td>Multiple Choices</td>
+  </tr>
+  <tr>
+    <td>301</td>
+    <td>Moved Permanently</td>
+  </tr>
+  <tr>
+    <td>302</td>
+    <td>Found</td>
+  </tr>
+  <tr>
+    <td>303</td>
+    <td>See Other (Since HTTP/1.1)</td>
+  </tr>
+  <tr>
+    <td>304</td>
+    <td>Not Modified (RFC 7232)</td>
+ </tr>
+ <tr>
+    <td>305</td>
+    <td>Used Proxy(Since HTTP/1.1)</td>
+ </tr>
+  <tr>
+    <td>306</td>
+    <td>Switch Proxy </td>
+  </tr>
+  <tr>
+    <td>307</td>
+    <td>Temporary Redirect (Since HTTP/1.1)</td>
+  </tr>
+  <tr>
+    <td>308</td>
+    <td>Permanent Redirect (RFC 7538)</td>
+  </tr>
+  </table>
+  <h2>Client Errors</h2>
+<table id="sc4">
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>Bad Request</td>
+ </tr>
+  <tr>
+    <td>401</td>
+    <td>Unauthorized</td>
+  </tr>
+  <tr>
+    <td>402</td>
+    <td>Payment Required</td>
+  </tr>
+  <tr>
+    <td>403</td>
+    <td>Forbidden</td>
+ </tr>
+  <tr>
+    <td>404</td>
+    <td>Not Found</td>
+  </tr>
+  <tr>
+    <td>405</td>
+    <td>Method Not Allowed</td>
+  </tr>
+  <tr>
+    <td>406</td>
+    <td>Not Acceptable</td>
+  </tr>
+  <tr>
+    <td>407</td>
+    <td>Proxy Authentication Required</td>
+  </tr>
+  <tr>
+    <td>408</td>
+    <td>Request Timeout</td>
+  </tr>
+  <tr>
+    <td>409</td>
+    <td>Conflict</td>
+  </tr>
+  <tr>
+    <td>410</td>
+    <td>Gone</td>
+  </tr>
+  <tr>
+    <td>411</td>
+    <td>Length Required</td>
+  </tr>
+  <tr>
+    <td>412</td>
+    <td>Precondtion Failed(RFC 7232)</td>
+  </tr>
+  <tr>
+    <td>413</td>
+    <td>Payload Too large(RFC 7231)</td>
+  </tr>
+   <tr>
+    <td>414</td>
+    <td>URI Too Long(RFC 7231)</td>
+   </tr>
+  <tr>
+    <td>415</td>
+    <td>Unsupported Media Type</td>
+  </tr>
+  <tr>
+    <td>416</td>
+    <td>Range Not Satisfiable(RFC 7233)</td>
+  </tr>
+  <tr>
+    <td>417</td>
+    <td>Expectation Failed</td>
+  </tr>
+  <tr>
+    <td>418</td>
+    <td>I'm a teapot(RFC 2324)</td>
+  </tr>
+  <tr>
+    <td>421</td>
+    <td>Missdirected Request (RFC 7540)</td>
+  </tr>
+  <tr>
+    <td>422</td>
+    <td>Unprocessable Entity(WebDAV; RFC 4918)</td>
+  </tr>
+  <tr>
+    <td>423</td>
+    <td>Locked(WebDAV; RFC 4918)</td>
+  </tr>
+  <tr>
+    <td>424</td>
+    <td>Failed Dependency(WebDAV;RFC 4918)</td>
+  </tr>
+  <tr>
+    <td>426</td>
+    <td>Upgrade Required</td>
+  </tr>
+  <tr>
+    <td>428</td>
+    <td>Precondition Required(RFC 6585)</td>
+  </tr>
+  <tr>
+    <td>429</td>
+    <td>Too Many Request(RFC 6585)</td>
+  </tr>
+  <tr>
+    <td>431</td>
+    <td>Request Header Fields Too Large(RFC 6585)</td>
+  </tr>
+  <tr>
+    <td>451</td>
+    <td>Unavailable For Legal Reasons(RFC 7725)</td>
+  </tr>            
+  </table>
+  <h2>Server Errors</h2>
+<table id="sc5">
+  <tr>
+    <th>Status Codes</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>500</td>
+    <td>Internal Server Error</td>
+  </tr>
+  <tr>
+    <td>501</td>
+    <td>Not Implemented</td>
+     </tr>
+  <tr>
+    <td>502</td>
+    <td>Bad Gateway</td>
+     </tr>
+    <tr>
+    <td>503</td>
+    <td>Service Unavailable</td>
+     </tr>
+    <tr>
+    <td>504</td>
+    <td>Gateway Timeout</td>
+     </tr>
+     <tr>
+    <td>505</td>
+    <td>HTTP Version Not Supported</td>
+     </tr>
+     <tr>
+     <td>506</td>
+    <td>Variant Also Negotiates</td>
+     </tr>
+     <tr>
+     <td>507</td>
+    <td>Insufficient Storage(WebDAV; RFC 4918)</td>
+  </tr>
+  <tr>
+   <td>508</td>
+    <td>Loop Extended(WebDAV; RFC 5842)</td>
+     </tr>
+<tr>
+  <td>510</td>
+    <td>Not Extended(RFC 2774)</td>
+     </tr>
+<tr>
+  <td>511</td>
+    <td>Network Authentication Required(RFC 6585)</td>
+     </tr>
+   </table>
+       </div>
+</section>
+
+
+
+
+<div class="copyright">
+      <p> Web System and Technologies. Copyright 2018. Group 6 </p>
+    </div>
+</body>
+</html>
