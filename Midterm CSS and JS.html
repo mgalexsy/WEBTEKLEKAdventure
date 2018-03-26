@@ -1,0 +1,257 @@
+            <div>
+                <h1>CSS</abbr></h1>
+                <hr>
+                <p>Language used to specify the presentation aspects( e.g layout and formatting) of structurally marked up documents</p>
+                <p>Developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP) </p>
+                <h2>CSS Versions</h2>
+                <hr>
+                <article>
+                    <h3>CSS 1 (December 17, 1996)</h3>
+                    <h3>CSS 2.1 (June 7, 2011)</h3>
+                    <h3>CSS 3</h3>
+                </article>
+                <h2>CSS Processors and CSS Frameworks</h2>
+                <hr>
+                <div>
+                    <ul>
+                        <li>SaSS</li>
+                        <li>Less</li>
+                        <li>960 Grid System</li>
+                        <li>Bootstrap</li>
+                        <li>Foundation</li>
+                        <li>Materialize</li>
+                        <li>etc.</li>
+                    </ul>
+                </div>
+                <h2>HTML/XHTML Stylesheets</h2>
+                <hr>
+                <article>
+                    <h3>Author Styles</h3>
+                    <article>
+                        <p>CSS created by the author. Default style sheet and has the lowest priority.</p>
+                        <h4>External Styles Sheet</h4>
+                        <p>link elements</p>
+                        <ul>
+                            <li>rel</li>
+                            <li>type</li>
+                            <li>href</li>
+                            <li>media</li>
+                        </ul>
+                        <h4>Embeded Styles</h4>
+                        <p>style element</p>
+                        <ul>
+                            <li>meta</li>
+                        </ul>
+                        <h4>Inline Styles</h4>
+                        <p>style attribute</p>
+                    </article>
+                    <h3>User Styles</h3>
+                    <p>style use by the author</p>
+                    <h3>User Agent Styles</h3>
+                    <p>Default stylesheet by the browser</p>
+                </article>
+                <h2>CSS Statements</h2>
+                <hr>
+                <article>
+                    <h3>@ Rules</h3>
+                    <ul>
+                        <li>@charset</li>
+                        <li>@import</li>
+                        <li>@media</li>
+                        <li>@font-face</li>
+                        <li>@keyframe</li>
+                        <li>@page</li>
+                        <li>@namespace</li>
+                        <li>@document</li>
+                    </ul>
+                    <h3>CSS Rule Sets (a.k.a CSS RulesStyle Rules)</h3>
+                    <p>Consist of a selector followed by a brace enclose with declarations block</p>
+                </article>
+                <h2>CSS Selectors</h2>
+                <hr>
+                <article>
+                    <h3>Selector</h3>
+                    <p>Structure used as a condition in CSS rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting specified in CSS rule declaration block</p>
+                    <h3>Selector Syntax</h3>
+                    <div>
+                        <p>Chain of one or more sequences of simple selector separated by combinators, with one pseudo element possibly appended to the last sequence </p>
+                        <p>e.g.</p>
+                        <p>div#abc>p.xyz[title]+span:first-child::after</p>
+                        <p>Sequence of simple selectors</p>
+                        <ul>
+                            <li>Chain of simple selectors not separated by combinators</li>
+                            <li>Always starts with a type selector or a universal selector.</li>
+                            <li>Cannot contain other type selector or universal selectore</li>
+                        </ul>
+                        <p>Group of selectors</p>
+                        <ul>
+                            <li>Comma. separate list of selectors representing the union of all elements by each selectors in the list</li>
+                        </ul>
+                    </div>
+                    <h3>Simple Selectors</h3>
+                    <div>
+                        <h4>Type Selector</h4>
+                        <div>
+                            <p>names of elements</p>
+                            <ul>
+                                <li>p</li>
+                                <li>div</li>
+                                <li>san</li>
+                            </ul>
+                        </div>
+                        <h4>Universal Set</h4>
+                        <p>matches everything</p>
+                        <h4>Attribute Set</h4>
+                        <div>
+                            <p>[attr] (ex. Abbr [title])</p>
+                            <p>[attr| value]</p>
+                        </div>
+                        <h4>Class Set</h4>
+                        <p>p.xyz (p class = ‘xyz’)</p>
+                        <h4>ID Set</h4>
+                        <div>
+                            <p>for ID attribute</p>
+                            <p>[id = abc] = div#abc</p>
+                        </div>
+                        <h4>Pseudo Set</h4>
+                        <div>
+                            <p>Dynamic Pseudo-Class</p>
+                            <div>
+                                <p>Link Pseudo-Class</p>
+                                <ul>
+                                    <li>:link</li>
+                                    <li>:visited</li>
+                                </ul>
+                                <p>User action Pseudo-Class</p>
+                                <ul>
+                                    <li>:hover</li>
+                                    <li>:active</li>
+                                    <li>:focus</li>
+                                </ul>
+                            </div>
+                            <p>Target Pseudo-Class</p>
+                            <ul>
+                                <li>:target</li>
+                            </ul>
+                            <p>Language Pseudo-Class</p>
+                            <ul>
+                                <li>:lang()</li>
+                            </ul>
+                            <p>UI Element States Pseudo-Class</p>
+                            <ul>
+                                <li>:enabled</li>
+                                <li>:disabled</li>
+                                <li>:checked</li>
+                                <li>:indeterminate</li>
+                            </ul>
+                            <p>Structural Pseudo-Class</p>
+                            <ul>
+                                <li>:root</li>
+                                <li>:first-child</li>
+                                <li>:last-child</li>
+                                <li>:only-child</li>
+                                <li>:nth-child()</li>
+                                <li>:nth-last-child()</li>
+                                <li>:first-of-type</li>
+                                <li>:last-of-type</li>
+                                <li>:only-of-type</li>
+                                <li>:nth-of-type</li>
+                                <li>:nth-last-of-type()</li>
+                                <li>:empty</li>
+                            </ul>
+                            <p>Negation Pseudo-Class</p>
+                            <ul>
+                                <li>:not()</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Combinators</h3>
+                    <div>
+                        <h4>Descendant Combinator</h4>
+                        <p>white space<p>
+                        <h4>Child Combinator</h4>
+						<p> (>) </p>
+                        <h4>Sibling Combinator</h4>
+                        <div>
+                            <p>Adjacent Sibling Combinator(+)</p>
+                            <p>General Sibling Combinator (~)</p>
+                        </div>
+                    </div>
+                    <h3>Pseudo Elements</h3>
+                    <ul>
+                        <li>::first-letter, :first-letter</li>
+                        <li>::first-line, :first-line</li>
+                        <li>::before, :before</li>
+                        <li>::after, :after</li>
+                    </ul>
+                </article>
+                <h2>CSS Rule Presedence</h2>
+                <hr>
+                <article>
+                    <h3>By Origin and Importance</h3>
+                    <ul>
+                        <li>user agent important declaration</li>
+                        <li>user important declaration</li>
+                        <li>author important declaration</li>
+                        <li>author normal declaration</li>
+                        <li>user normal declaration</li>
+                        <li>user agent normal declaration</li>
+                    </ul>
+                    <h3>By Specificty</h3>
+                    <ul>
+                        <li>inline style</li>
+                        <li>number of ID selector</li>
+                        <li>number of class selector, attribute selector, and pseudo-classes</li>
+                        <li>number of type selector and pseudo elements</li>
+                    </ul>
+                    <h3>By Order</h3>
+                    <ul>
+                        <li>last declaration</li>
+                    </ul>
+                </article>
+                <h2>CSS Declaration</h2>
+                <hr>
+                <article>
+                    <h3>Properties</h3>
+                    <div>
+                        <p>short hand properties</p>
+                        <p>extension properties</p>
+                    </div>
+                    <h3>Values</h3>
+                    <div>
+                        <p>keywords</p>
+                        <p>number</p>
+                        <p>dimension</p>
+                        <div>
+                            <p>length, angle, duration, frequency, resolution</p>
+                            <p>length unit</p>
+                            <div>
+                                <p>length, angle, duration, frequency, resolution</p>
+                                <p>length unit</p>
+                                    <ul>
+                                        <li>font-relative: em, ex, cn, rem</li>
+                                        <li>view-percentage: vw, vh, q, vmin, vmax</li>
+                                        <li>absolute lengths: cm, mm, a, in, pt, pc, px</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <p>percentages</p>
+                        <p>URLs and URIs</p>
+                        <p>colors</p>
+                        <p>strings</p>
+                        <p>functions</p>
+                        <ul>
+                            <li>calc()</li>
+                            <li>attr()</li>
+                            <li>counter()</li>
+                            <li>counters()</li>
+                            <li>linear-gradient()</li>
+                            <li>radial-gradient()</li>
+                            <li>translate()</li>
+                            <li>scale()</li>
+                            <li>rotate()</li>
+                            <li>etc.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
