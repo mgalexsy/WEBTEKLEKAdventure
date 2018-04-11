@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/midterm.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/midterm.js"></script>
+	
+	<title> Midterms</title>
+</head>
+<body>
+
+
+
+<div class="header">
+	<p> JAVASCRIPT and CSS</p>
+	<div class="spanNav">
+		<span class ="menu" style="font-size:30px;cursor:pointer" onclick="openNav()"></span>
+	</div>
+	<div id="sideNavigation" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="prelims.html">Prelims</a>
+	  <a href="midterms.html">Midterms</a>
+	  <a href="#">Finals</a>
+	  <a href="#">About Us</a>
+	</div>
+</div>
+
+<div class="content">
+	
+
+ <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1"> What is HTML?</label>
+     
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2"> What is CSS?</label>
+    
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3"> What is JavaScript?</label>
+    
+  <input id="tab4" type="radio" name="tabs">
+  <label for="tab4"> History of World Wide</label>
+
+  <input id="tab5" type="radio" name="tabs">
+  <label for="tab5"> References:</label>
+
+
+    
+  <section id="content1">
+    <p> HTML is the language for describing the structure of Web pages. HTML gives authors the means to:</p>
+
+  <ul style="list-style-type:square">
+ 	 <li>Publish online documents with headings, text, tables, lists, photos, etc.</li>
+ 	 <li> Retrieve online information via hypertext links, at the click of a button.</li>
+  	 <li>Design forms for conducting transactions with remote services, for use in searching for information, making reservations, ordering products, etc.</li>
+  	 <li>Include spread-sheets, video clips, sound clips, and other applications directly in their documents.</li>
+  </ul> 
+
+  <p>With HTML, authors describe the structure of pages using markup. The elements of the language label pieces of content such as “paragraph,” “list,” “table,” and so on.</p>  
+
+  <h3> What is XHTML?</h3>
+  <p>XHTML is a variant of HTML that uses the syntax of XML, the Extensible Markup Language. XHTML has all the same elements (for paragraphs, etc.) as the HTML variant, but the syntax is slightly different. Because XHTML is an XML application, you can use other XML tools with it (such as XSLT, a language for transforming XML content).</p>
+
+  <h3> Author Styles </h3>
+  <p>CSS created by the author. Default style sheet and has the lowest priority.</p>
+
+  <h3> External Style Sheets </h3>
+  <h4> Link Elements: </h4>
+
+    <ul style="list-style-type:square">
+ 	 <li>rel</li>
+ 	 <li>type</li>
+  	 <li>href</li>
+  	 <li>media</li>
+  </ul>
+
+  <h3>Embedded Styles</h3>
+  	<p> Style element: Meta </p>
+
+  <h3>Inline Styles</h3>
+  <h4> Attribute Definitions</h4>
+  <p>
+  style = style [CN]
+This attribute specifies style information for the current element.
+The syntax of the value of the style attribute is determined by the default style sheet language. For example, for [[CSS2]] inline style, use the declaration block syntax described in section 4.1.8 (without curly brace delimiters).
+
+This CSS example sets color and font size information for the text in a specific paragraph.
+<p>
+<P style="font-size: 12pt; color: fuchsia">Aren't style sheets wonderful?
+In CSS, property declarations have the form "name : value" and are separated by a semi-colon.</P></p>
+
+To specify style information for more than one element, authors should use the STYLE element. For optimal flexibility, authors should define styles in external style sheets.
+
+</P>
+
+
+<h3>External Stylesheets</h3>
+<p> Authors may separate style sheets from HTML documents. This offers several benefits:</p>
+
+ <ul style="list-style-type:square">
+ 	 <li>Authors and Web site managers may share style sheets across a number of documents (and sites).</li>
+ 	 <li>Authors may change the style sheet without requiring modifications to the document.</li>
+  	 <li>User agents may load style sheets selectively (based on media descriptions).</li>
+  	 
+  </ul>
+
+  <h3>Preferred and Alternate Stylesheets</h3>
+
+  <p>HTML allows authors to associate any number of external style sheets with a document. The style sheet language defines how multiple external style sheets interact (for example, the CSS "cascade" rules).</p>
+  <p>Authors may specify a number of mutually exclusive style sheets called alternate style sheets. Users may select their favorite among these depending on their preferences. For instance, an author may specify one style sheet designed for small screens and another for users with weak vision (e.g., large fonts). User agents should allow users to select from alternate style sheets.</p>
+  <p>The author may specify that one of the alternates is a preferred style sheet. User agents should apply the author's preferred style sheet unless the user has selected a different alternate.</p>
+  <p>Authors may group several alternate style sheets (including the author's preferred style sheets) under a single style name. When a user selects a named style, the user agent must apply all style sheets with that name. User agents must not apply alternate style sheets with a different style name. The section on specifying external style sheets explains how to name a group of style sheets.</p>
+  <p>Authors may also specify persistent style sheets that user agents must apply in addition to any alternate style sheet.</p>
+  <p>User agents must respect media descriptors when applying any style sheet.</p>
+  <p>User agents should also allow users to disable the author's style sheets entirely, in which case the user agent must not apply any persistent or alternate style sheets.</p>
+
+  <h3> Specifying External Style Sheets</h3>
+  <p>Authors specify external style sheets with the following attributes of the LINK element:</p>
+
+
+ <ul style="list-style-type:square">
+ 	 <li>Set the value of href to the location of the style sheet file. The value of href is a URI.</li>
+ 	 <li>Set the value of the type attribute to indicate the language of the linked (style sheet) resource. This allows the user agent to avoid downloading a style sheet for an unsupported style sheet language.</li>
+  	 <li >Specify that the style sheet is persistent, preferred, or alternate:</li>
+  	 <ul style="list-style-type:disc">
+  	 	<li>To make a style sheet persistent, set the rel attribute to "stylesheet" and don't set the title attribute.</li>
+  	 	<li>To make a style sheet preferred, set the rel attribute to "stylesheet" and name the style sheet with the title attribute.</li>
+  	 	<li>To specify an alternate style sheet, set the rel attribute to "alternate stylesheet" and name the style sheet with the title attribute.</li>
+  	 </ul>
+  </ul>
+ <p>User agents should provide a means for users to view and pick from the list of alternate styles. The value of the title attribute is recommended as the name of each choice.</p>
+<p>If two or more META declarations or HTTP headers specify the preferred style sheet, the last one takes precedence. HTTP headers are considered to occur earlier than the document HEAD for this purpose.</p>
+<p>If two or more LINK elements specify a preferred style sheet, the first one takes precedence.</p>
+<p>Preferred style sheets specified with META or HTTP headers have precedence over those specified with the LINK element.</p>
+
+
+
+<h1> HTML 4 provides support for the following style sheet features: </h1>
+
+<!-- ACCORDION -->
+<div class="accordion">
+  <dl>
+              
+    <dt>
+    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Flexible placement of style information</a>
+    </dt>
+              
+    <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+    <p>Placing style sheets in separate files makes them easy to reuse. Sometimes it's useful to include rendering instructions within the document to which they apply, either grouped at the start of the document, or in attributes of the elements throughout the body of the document. To make it easier to manage style on a site basis, this specification describes how to use HTTP headers to set the style sheets to be applied to a document.</p>
+    </dd>
+              <!-- ACCORDION -->
+    <dt>
+     <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+         Independence from specific style sheet languages</a>
+    </dt>
+             
+    <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+    <p>This specification doesn't tie HTML to any particular style sheet language. This allows for a range of such languages to be used, for instance simple ones for the majority of users and much more complex ones for the minority of users with highly specialized needs. The examples included below all use the CSS (Cascading Style Sheets) language [CSS1], but other style sheet languages would be possible.</p>
+    </dd>
+             
+     <dt>
+     <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                 Cascading
+                </a>
+     </dt>
+             
+     <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+     <p>This is the capability provided by some style sheet languages such as CSS to allow style information from several sources to be blended together. These could be, for instance, corporate style guidelines, styles common to a group of documents, and styles specific to a single document. By storing these separately, style sheets can be reused, simplifying authoring and making more effective use of network caching. The cascade defines an ordered sequence of style sheets where rules in later sheets have greater precedence than earlier ones. Not all style sheet languages support cascading.</p>
+     </dd>
+
+
+      <dt>
+      <a href="#accordion4" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                 Media dependencies
+                </a>
+      </dt>
+             
+      <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+      <p>HTML allows authors to specify documents in a media-independent way. This allows users to access Web pages using a wide variety of devices and media, e.g., graphical displays for computers running Windows, Macintosh OS, and X11, devices for television sets, specially adapted phones and PDA-based portable devices, speech-based browsers, and braille-based tactile devices.</p>
+
+      <p>Style sheets, by contrast, apply to specific media or media groups. A style sheet intended for screen use may be applicable when printing, but is of little use for speech-based browsers. This specification allows you to define the broad categories of media a given style sheet is applicable to. This allows user agents to avoid retrieving inappropriate style sheets. Style sheet languages may include features for describing media dependencies within the same style sheet.</p>
+               
+      </dd>
+
+      <dt>
+      <a href="#accordion5" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                 Alternate styles
+                </a>
+      </dt>
+             
+      <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+      <p>Authors may wish to offer readers several ways to view a document. For instance, a style sheet for rendering compact documents with small fonts, or one that specifies larger fonts for increased legibility. This specification allows authors to specify a preferred style sheet as well as alternates that target specific users or media. User agents should give users the opportunity to select from among alternate style sheets or to switch off style sheets altogether.</p>
+
+     
+               
+      </dd>
+
+
+ <dt>
+      <a href="#accordion5" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                 Performance concerns
+                </a>
+      </dt>
+             
+      <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+      <p>Some people have voiced concerns over performance issues for style sheets. For instance, retrieving an external style sheet may delay the full presentation for the user. A similar situation arises if the document head includes a lengthy set of style rules.</p>
+      <p>The current proposal addresses these issues by allowing authors to include rendering instructions within each HTML element. The rendering information is then always available by the time the user agent wants to render each element.</p>
+      <p>In many cases, authors will take advantage of a common style sheet for a group of documents. In this case, distributing style rules throughout the document will actually lead to worse performance than using a linked style sheet, since for most documents, the style sheet will already be present in the local cache. The public availability of good style sheets will encourage this effect.</p>
+
+     
+               
+      </dd>
+
+
+
+      </dl>
+ </div>
+</section>
+
+   
+
+
+
+  <section id="content2">
+  	<ul style="list-style-type:square">
+  	<li>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.</li>
+
+  	<li>Language used to specify the presentation aspects( e.g layout and formatting) of structurally marked up documents</li>
+
+	<li>Developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP)</li>
+	</ul>
+
+
+	<h1>CSS Versions</h1>
+	  
+ <dt>
+ 	 <a href="#accordion1" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                CSS 1 (December 17, 1996)
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+     <p>The first CSS specification to become an official W3C Recommendation is CSS level 1, published in December 1996. Among its capabilities are support for:</p>
+      <ul style="list-style-type:square">
+  		<li>Font properties such as typeface and emphasis</li>
+
+ 	 	<li>Color of text, backgrounds, and other elements</li>
+
+		<li>Text attributes such as spacing between words, letters, and lines of text</li>
+		<li>Alignment of text, images, tables and other elements</li>
+		<li>Margin, border, padding, and positioning for most elements</li>
+		<li>Unique identification and generic classification of groups of attributes</li>
+	  </ul>
+	  <p>The W3C no longer maintains the CSS 1 Recommendation.</p>
+     
+               
+      </dd>
+
+
+       <dt>
+ 	 <a href="#accordion2" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                CSS 2 (June 7, 2011)
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+     <p>CSS level 2 specification was developed by the W3C and published as a Recommendation in May 1998. A superset of CSS 1, CSS 2 includes a number of new capabilities like absolute, relative, and fixed positioning of elements and z-index, the concept of media types, support for aural style sheets and bidirectional text, and new font properties such as shadows. The W3C no longer maintains the CSS 2 recommendation.</p>
+
+     <p>CSS level 2 revision 1 or CSS 2.1 fixes errors in CSS 2, removes poorly-supported or not fully interoperable features and adds already-implemented browser extensions to the specification. In order to comply with the W3C Process for standardizing technical specifications, CSS 2.1 went back and forth between Working Draft status and Candidate Recommendation status for many years. CSS 2.1 first became a Candidate Recommendation on February 25, 2004, but it was reverted to a Working Draft on June 13, 2005 for further review. It was returned to Candidate Recommendation status on 19 July 2007 and was updated twice in 2009. However, since changes and clarifications were made to the prose it went back to Last Call Working Draft on 7 December 2010. Later it went into Proposed Recommendation on 12 April 2011. It was published as a Recommendation on 7 June 2011.</p>
+     
+               
+      </dd>
+
+   <dt>
+ 	 <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                CSS 3 
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+     <p>Instead of defining all features in a single, large specification like CSS 2, CSS 3 is divided into several separate documents called "modules". Each module adds new capability or extends features defined in CSS 2, over preserving backward compatibility. Work on CSS level 3 started around the time of publication of the original CSS 2 recommendation. The earliest CSS 3 drafts were published in June 1999.</p>
+
+     <p>Due to the modularization, different modules have different stability and are in different status. As of March 2011, there are over 40 CSS modules published from the CSS Working Group. Some modules such as Selectors, Namespaces, Color and Media Queries are considered stable and are either in Candidate Recommendation or Proposed Recommendation status. Once CSS 2.1 is finalized and published as Recommendation, they are likely to go to Recommendation as well.</p>
+
+	</p>On 7 June 2011, the CSS 3 Color Module was published as a W3C Recommendation." </p>
+     
+               
+      </dd>
+
+
+      <h2>CSS Processors and CSS Frameworks</h2>
+             
+        <ul>
+          <li>SaSS</li>
+          <li>Less</li>
+          <li>960 Grid System</li>
+          <li>Bootstrap</li>
+          <li>Foundation</li>
+          <li>Materialize</li>
+          <li>etc.</li>
+        </ul>
+
+       <h2>CSS Statements</h2>
+         <h3>@ Rules</h3>
+         <ul>
+           <li>@charset</li>
+           <li>@import</li>
+           <li>@media</li>
+           <li>@font-face</li>
+           <li>@keyframe</li>
+           <li>@page</li>
+           <li>@namespace</li>
+           <li>@document</li>
+         </ul>
+       <h3>CSS Rule Sets (a.k.a CSS RulesStyle Rules)</h3>
+      <p>Consist of a selector followed by a brace enclose with declarations block</p>
+
+<h1> CSS Selectors</h1>
+
+<dt>
+ 	 <a href="#accordion4" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+               Selector 
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+     <p>Structure used as a condition in CSS rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting specified in CSS rule declaration block
+
+</p>
+               
+      </dd>  
+
+
+  <dt>
+ 	 <a href="#accordion5" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+               Selector  Syntax
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+     <p>A simple selector is either a type selector or universal selector followed immediately by zero or more attribute selectors, ID selectors, or pseudo-classes, in any order. The simple selector matches if all of its components match.</p>
+
+     <p>A selector is a chain of one or more simple selectors separated by combinators. Combinators are: white space, ">", and "+". White space may appear between a combinator and the simple selectors around it.</p>
+    
+     <p> The elements of the document tree that match a selector are called subjects of the selector. A selector consisting of a single simple selector matches any element satisfying its requirements. Prepending a simple selector and combinator to a chain imposes additional matching constraints, so the subjects of a selector are always a subset of the elements matching the last simple selector.</p>
+
+	<p>One pseudo-element may be appended to the last simple selector in a chain, in which case the style information applies to a subpart of each subject.</p>
+
+	<p>e.g.</p>
+    <p>div#abc>p.xyz[title]+span:first-child::after</p>
+     
+               
+      </dd>  
+
+
+
+
+
+      <dt>
+ 	 <a href="#accordion6" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+               Grouping 
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+     <p>Comma. separate list of selectors representing the union of all elements by each selectors in the list</p>
+     
+     <p>When several selectors share the same declarations, they may be grouped into a comma-separated list.</p>
+
+     <p style="color:red"> In this example, we condense three rules with identical declarations into one. Thus,
+
+h1 { font-family: sans-serif }
+h2 { font-family: sans-serif }
+h3 { font-family: sans-serif }
+is equivalent to:
+
+h1, h2, h3 { font-family: sans-serif }</p>
+
+<p>CSS offers other "shorthand" mechanisms as well, including multiple declarations and shorthand properties.</p>
+               
+      </dd>                
+
+
+      <dt>
+ 	 <a href="#accordion7" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+               Universal Selector
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+    <p>	The universal selector, written "*", matches the name of any element type. It matches any single element in the document tree.</p>
+
+	<p>If the universal selector is not the only component of a simple selector, the "*" may be omitted. For example:</p>
+	<ul style="list-style-type:square">
+	<li>*[lang=fr] and [lang=fr] are equivalent.</li>
+	<li>*.warning and .warning are equivalent.</li>
+	<li>*#myid and #myid are equivalent.</li>
+    </ul>
+               
+      </dd>       
+
+
+
+
+      <dt>
+ 	 <a href="#accordion8" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+               Type Selector
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+    <p>A type selector matches the name of a document language element type. A type selector matches every instance of the element type in the document tree.	</p>
+     <p>names of elements</p>
+     <ul style="list-style-type:square">
+        <li>p</li>
+        <li>div</li>
+        <li>san</li>
+        </ul>
+               
+      </dd> 
+
+
+       <dt>
+ 	 <a href="#accordion9" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+               Attribute Selector
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+    <p>CSS 2.1 allows authors to specify rules that match elements which have certain attributes defined in the source document.</p>
+     
+    <p>Attribute selectors may match in four ways:</p>
+    <ul style="list-style-type:square">
+    <li>[att]</li>
+	<p>Match when the element sets the "att" attribute, whatever the value of the attribute.</p>
+	<li>[att=val]</li>
+	<p>Match when the element's "att" attribute value is exactly "val".</p>
+	<li>[att~=val]</li>
+	<p>Represents an element with the att attribute whose value is a white space-separated list of words, one of which is exactly "val". If "val" contains white space, it will never represent anything (since the words are separated by spaces). If "val" is the empty string, it will never represent anything either.</p>
+	<li>[att|=val]</li>
+	<p>Represents an element with the att attribute, its value either being exactly "val" or beginning with "val" immediately followed by "-" (U+002D). This is primarily intended to allow language subcode matches (e.g., the hreflang attribute on the a element in HTML) as described in BCP 47 ([BCP47]) or its successor. For lang (or xml:lang) language subcode matching, please see the :lang pseudo-class.</p>
+
+  </ul>
+
+
+      </dd> 
+
+
+
+      <dt>
+ 	 <a href="#accordion10" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+               Class Selectors
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+    
+
+<p>Working with HTML, authors may use the period (.) notation as an alternative to the ~= notation when representing the class attribute. Thus, for HTML, div.value and div[class~=value] have the same meaning. The attribute value must immediately follow the "period" (.). UAs may apply selectors using the period (.) notation in XML documents if the UA has namespace specific knowledge that allows it to determine which attribute is the "class" attribute for the respective namespace. One such example of namespace specific knowledge is the prose in the specification for a particular namespace (e.g., SVG 1.1 [SVG11] describes the SVG "class" attribute and how a UA should interpret it, and similarly MathML 3.0 [MATH30] describes the MathML "class" attribute.)</p>
+
+
+      </dd>
+
+    <dt>
+ 	 <a href="#accordion11" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+              ID Selector
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+    
+
+<p> Document languages may contain attributes that are declared to be of type ID. What makes attributes of type ID special is that no two such attributes can have the same value; whatever the document language, an ID attribute can be used to uniquely identify its element. In HTML all ID attributes are named "id"; XML applications may name ID attributes differently, but the same restriction applies.
+
+The ID attribute of a document language allows authors to assign an identifier to one element instance in the document tree. CSS ID selectors match an element instance based on its identifier. A CSS ID selector contains a "#" immediately followed by the ID value, which must be an identifier.</p>
+
+
+      </dd>
+
+
+<dt>
+ 	 <a href="#accordion12" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+              Pseudo Elements and Pseudo Classes
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+    
+
+<p>In CSS 2.1, style is normally attached to an element based on its position in the document tree. This simple model is sufficient for many cases, but some common publishing scenarios may not be possible due to the structure of the document tree. For instance, in HTML 4 (see [HTML4]), no element refers to the first line of a paragraph, and therefore no simple CSS selector may refer to it.<p>
+
+<p>CSS introduces the concepts of pseudo-elements and pseudo-classes to permit formatting based on information that lies outside the document tree.</p>
+
+
+<ul style="list-style-type:square">
+  	<li>Pseudo-elements create abstractions about the document tree beyond those specified by the document language. For instance, document languages do not offer mechanisms to access the first letter or first line of an element's content. CSS pseudo-elements allow style sheet designers to refer to this otherwise inaccessible information. Pseudo-elements may also provide style sheet designers a way to assign style to content that does not exist in the source document (e.g., the :before and :after pseudo-elements give access to generated content).</li>
+
+  	
+</ul>
+
+</dd>
+
+<dt>
+ 	 <a href="#accordion13" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+              Continuation of Pseudo Classes
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+    
+
+<p>Neither pseudo-elements nor pseudo-classes appear in the document source or document tree.</p>
+<p>Pseudo-classes are allowed anywhere in selectors while pseudo-elements may only be appended after the last simple selector of the selector.</p>
+
+<p>Pseudo-element and pseudo-class names are case-insensitive.</p>
+<p>Some pseudo-classes are mutually exclusive, while others can be applied simultaneously to the same element. In case of conflicting rules, the normal cascading order determines the outcome.</p>
+</dd>
+
+<dt>
+ 	 <a href="#accordion14" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+              Continuation of Pseudo Classes
+    	</a>
+ </dt>
+             
+  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+    
+
+<p>Neither pseudo-elements nor pseudo-classes appear in the document source or document tree.</p>
+<p>Pseudo-classes are allowed anywhere in selectors while pseudo-elements may only be appended after the last simple selector of the selector.</p>
+
+<p>Pseudo-element and pseudo-class names are case-insensitive.</p>
+<p>Some pseudo-classes are mutually exclusive, while others can be applied simultaneously to the same element. In case of conflicting rules, the normal cascading order determines the outcome.</p>
+</dd>
+
+<h2> Pseudo Set</h2>
+
+<div>
+  <h3>Dynamic Pseudo-Class</h3>
+<div>
+  <h3>Link Pseudo-Class</h3>
+     <ul>
+       <li>:link</li>
+       <li>:visited</li>
+     </ul>
+  <h3>User action Pseudo-Class</h3>
+     <ul>
+      <li>:hover</li>
+      <li>:active</li>
+      <li>:focus</li>
+    </ul>
+ </div>
+   <h3>Target Pseudo-Class</h3>
+     <ul>
+      <li>:target</li>
+     </ul>
+    <h3>Language Pseudo-Class</h3>
+      <ul>
+       <li>:lang()</li>
+      </ul>
+    <h3>UI Element States Pseudo-Class</h3>
+      <ul>
+       <li>:enabled</li>
+       <li>:disabled</li>
+       <li>:checked</li>
+       <li>:indeterminate</li>
+      </ul>
+    <h3>Structural Pseudo-Class</h3>
+      <ul>
+       <li>:root</li>
+       <li>:first-child</li>
+       <li>:last-child</li>
+       <li>:only-child</li>
+       <li>:nth-child()</li>
+       <li>:nth-last-child()</li>
+       <li>:first-of-type</li>
+       <li>:last-of-type</li>
+       <li>:only-of-type</li>
+       <li>:nth-of-type</li>
+       <li>:nth-last-of-type()</li>
+       <li>:empty</li>
+      </ul>
+     <h3>Negation Pseudo-Class</h3>
+       <ul>
+        <li>:not()</li>
+       </ul>
+      </div>
+     </div>
+        
+      </dd>
+
+
+
+  </section>
+    
+
+  <section id="content3">
+  	<p> content</p>
+  </section>
+
+
+<script type="text/javascript" src="js/index.js"></script>
+
+</div>
+
+
+
+
+
+
+<footer>
+	<p>Web Systems and Technologies 2017-2018 Second Semester</p>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+
+
