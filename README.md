@@ -34,7 +34,7 @@ Return to WEBTEKLEKAdventure folder.
 Double Click on Midterm CSS and JS file to inspect Duane's Class Notes and HTML.
     Close this file.
 
-Double Click the LOGS1 text document to inspect the Midterm GITHUB LOG.
+Midterm GITHUB LOG appears to have been tampered with, possibly deleted, have tried many scripts to show LOG from end of last log until final due date of Midterm Project.
     ONLY Duane posted data (Class Notes with generic html) to GITHUB to allow collaboration by all Group Members of the Term Project.
     Viv did not complete any work, only mentioned verbally she was creating a QUIZ that was directed by Maceey, not the Group Leader,
     a job listing was previously posted on the Group FB Page.
